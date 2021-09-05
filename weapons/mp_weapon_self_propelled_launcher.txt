@@ -62,7 +62,7 @@ WeaponData
 	"vortex_drain"									"0.0"
 	"projectile_adjust_to_gun_barrel"				"1"
 
-	"explosion_shake_radius"						"300"
+	"explosion_shake_radius"						"320"
 	"explosion_shake_amplitude"						"2"
 	"explosion_shake_frequency"						"35"
 	"explosion_shake_duration"						"0.5"
