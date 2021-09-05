@@ -44,7 +44,7 @@ WeaponData
 	// Menu
 	"menu_category"                                 "lmg"
 	"menu_anim_class"                               "medium"
-	"stat_damage" 									"45"
+	"stat_damage" 									"15"
 	"stat_range"  									"75"
 	"stat_accuracy"   								"34"
 	"stat_rof"										"45"
@@ -137,7 +137,7 @@ WeaponData
 	"explosion_damages_owner"						"1"
 	"explosion_inner_radius"  						"150"
 	"explosionradius" 								"250"
-        "impulse_force_explosions"   								"122000"
+        "impulse_force_explosions"   								"60000"
 
 	"titanarmor_critical_hit_required"				"1"
 
@@ -358,10 +358,10 @@ WeaponData
 
 	// Ammo
 	"ammo_suck_behavior"							"primary_weapons"
-	"ammo_clip_size"   								"60"
-	"ammo_clip_reload_max"							"60"
+	"ammo_clip_size"   								"20"
+	"ammo_clip_reload_max"							"20"
 	"ammo_min_to_fire"								"1"
-	"ammo_per_shot"		    						"1"
+	"ammo_per_shot"		    						"2"
 	"ammo_no_remove_from_stockpile"					"1"
 	"chance_for_bonus_last_shot_in_clip"			"0"
 	"critical_hit"									"1"
@@ -375,15 +375,15 @@ WeaponData
 
     "aimassist_adspull_weaponclass"					"none"
 
-    "damage_near_value"   							"39"
-    "damage_far_value"								"25"
-    "damage_very_far_value"							"15"
+    "damage_near_value"   							"13"
+    "damage_far_value"								"10"
+    "damage_very_far_value"							"5"
     "damage_near_value_titanarmor"					"19"
     "damage_far_value_titanarmor" 					"19"
     "damage_very_far_value_titanarmor" 				"19"
 
     "damage_rodeo" 									"100"
-    "explosion_damage"								"30"
+    "explosion_damage"								"12"
     "damage_near_distance"							"1500"
     "damage_far_distance" 							"2500"
     "damage_very_far_distance"						"5000"
@@ -429,13 +429,13 @@ WeaponData
 	"dof_nearDepthEnd"							    "0.0"
 
 	// Behavior
-	"fire_rate"   									"22.0"
+	"fire_rate"   									"8.0"
 
 	"zoom_time_in"                                  "0.34"
 	"zoom_time_out"                                 "0.3"
 	"zoom_fov"										"55"
-	"reload_time" 									"3.26"
-	"reloadempty_time"								"3.26"
+	"reload_time" 									"4.26"
+	"reloadempty_time"								"5.26"
 	//"reloadempty_time_late1"						"4.7"
 	//"reloadempty_time_late2"						"3.5"
 	//"reloadempty_time_late3"						"2.5"
