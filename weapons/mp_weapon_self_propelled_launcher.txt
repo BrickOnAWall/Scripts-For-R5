@@ -17,10 +17,10 @@ WeaponData
 
 	"sound_pickup"									"wpn_pickup_MG_1P"
 
-	"projectile_drift_windiness"					"0.4"
-	"projectile_drift_intensity"					"0.1"
-	"projectile_straight_time_min"					"1.2"
-	"projectile_straight_time_max"					"1.45"
+	"projectile_drift_windiness"					"0.6"
+	"projectile_drift_intensity"					"0.4"
+	"projectile_straight_time_min"					"1.6"
+	"projectile_straight_time_max"					"1.5"
 	"projectile_straight_radius_min"				"0"
 	"projectile_straight_radius_max"				"0"
 	"projectile_launch_speed"						"3500"
@@ -39,8 +39,8 @@ WeaponData
 	"menu_category"                                 "special"
 	"menu_anim_class"                               "medium"
 	"stat_damage" 									"48"
-	"stat_range"  									"60"
-	"stat_accuracy"   								"60"
+	"stat_range"  									"5"
+	"stat_accuracy"   								"75"
 	"stat_rof"										"17"
 
 	// Models
@@ -88,7 +88,7 @@ WeaponData
 
 
 	// Ammo
-	"ammo_clip_size"   								"14"
+	"ammo_clip_size"   								"15"
 	"ammo_min_to_fire"								"1"
 
 	"bolt_hitsize"									"0.0"
@@ -168,7 +168,7 @@ WeaponData
 	"reloadempty_time_late1"						"2.3"
 	"reloadempty_time_late2"						"1.1"
 
-	"fire_rate"   									"4"
+	"fire_rate"   									"2"
 
 	"allow_headshots" 								"1"
 	"headshot_distance" 							"1000"
