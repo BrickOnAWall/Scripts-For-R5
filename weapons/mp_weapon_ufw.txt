@@ -135,7 +135,7 @@ WeaponData
 	"damage_type" 									"bullet"
 
 	"explosion_damages_owner"						"1"
-	"explosion_inner_radius"  						"150"
+	"explosion_inner_radius"  						"155"
 	"explosionradius" 								"250"
         "impulse_force_explosions"   								"60000"
 
