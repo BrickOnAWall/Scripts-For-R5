@@ -816,6 +816,10 @@ const vector LOOT_COLOR_HEIRLOOM = <255, 0, 0>
 vector function GetFXRarityColorForTier( int tier )
 {
 #if SERVER
+<<<<<<< HEAD
+=======
+	Warning( "Server is attempting to get a loot rarity color. This does not support accessibility features such as color blind mode." )
+>>>>>>> 1a0ebabd7a40f5ef5438ad8e0a54b842990a42bd
 	switch ( tier )
 	{
 		case eLootTier.NONE:
