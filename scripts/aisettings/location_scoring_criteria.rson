@@ -1,7 +1,0 @@
-// TODO: Reverse this
-{
-	LocationScoringCriteria:
-	[
-		CommonShootWithLos
-	]
-}
