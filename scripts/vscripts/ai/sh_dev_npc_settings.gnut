@@ -96,6 +96,8 @@ void function SetupModdedWeapons()
         SetupDevCommand( "Rocket Launcher ", "give mp_weapon_rocket_launcher" )
         SetupDevCommand( "Volternator ", "give mp_weapon_energy_smg" )
         SetupDevCommand( "Code Name ShatterBlast ", "give mp_weapon_shatterblast" )
+        SetupDevCommand( "Infinity Rifle From JustANormalUser#3770 ", "give mp_weapon_infinity_rifle" )
+        SetupDevCommand( "EPG From JustANormalUser#3770 ", "give mp_weapon_epg" )
 	#endif
 }
 

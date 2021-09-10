@@ -298,7 +298,7 @@
 	    {
 	    }
 
-		"survival_finite_ammo"
+		survival_finite_ammo
 		{
 			// Ammo
 			//
