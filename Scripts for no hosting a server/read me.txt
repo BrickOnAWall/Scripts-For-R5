@@ -1,0 +1,5 @@
+A new version of scripts with JustANormalUser's Framework Enjoy, credit goes to there rightful owner.
+YOU WILL NOT BE ABLE TO HOST A SERVER WITH THIS. This is an issue with JustANormalUser's Framework for now.
+
+1. Put playlists_r5_patch into "Whatever you have the modded apex named"/platform and 
+2. scripts into your scripts folder makesure it's EXTRACTED AND LOOKS LIKE A NORMAL SCRIPTS FOLDER!
