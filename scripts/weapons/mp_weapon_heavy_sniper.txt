@@ -9,10 +9,10 @@
 {
 	// General
 	//
-	"printname"                                "Rocket Launcher"
-	"shortprintname"                           "RPG"
-	"description"                              "Rocket Launcher very cool"
-	"longdesc"                                 "Mirages very spectacule rocket launcher."
+	"printname"                                "50, Cal"
+	"shortprintname"                           "50, Cal"
+	"description"                              "50, Caliber"
+	"longdesc"                                 "50, Caliber Sniper Rifle"
 
 	"weapon_type_flags"							"WPT_PRIMARY"
 	
@@ -29,64 +29,31 @@
 	// Models
 	"viewmodel"                                "mdl/weapons/g2/ptpov_g2a4.rmdl"
 	"playermodel"                              "mdl/weapons/g2/w_g2a4.rmdl"
-        "projectilemodel"                          "mdl/weapons/grenades/m20_f_grenade_projectile.rmdl"
 
 	"chroma_color"								"1 .8 .3"
 
 	// Behavior - Firing
 	//
-	"fire_rate"                                "1.5"
-	"impulse_force"                            "750"
-
-
-		// Effects
-	"tracer_effect"   								"P_wpn_tracer_pistol"
-	"tracer_effect_first_person"  					"P_wpn_tracer_pistol"
-	"impact_effect_table" 							"exp_frag_grenade"
-	"projectile_trail_effect_0" 					"P_tracer_projectile_smg_blue"
-	"projectile_trail_effect_1" 					"P_tracer_proj_sniper_energy"
-	"projectile_trail_attachment" 					"wpn_vortex_projectile_rocket_FP"
-	"vortex_absorb_effect"							"P_tracer_proj_sniper_energy"
-	"vortex_absorb_effect_third_person"				"P_tracer_proj_sniper_energy"
-	"vortex_absorb_sound"							"Vortex_Shield_AbsorbRocket"
-	"vortex_absorb_sound_1p_vs_3p"					"Vortex_Shield_AbsorbRocket_1P_VS_3P"
-	"vortex_drain"									"0.0"
-	"projectile_adjust_to_gun_barrel"				"1"
-
-	"explosion_shake_radius"						"300"
-	"explosion_shake_amplitude"						"2"
-	"explosion_shake_frequency"						"35"
-	"explosion_shake_duration"						"0.5"
-
-
-	"projectile_gravity_scale"						"0.4"
-
-
-	"explosion_damages_owner"						"1"
-	"explosion_inner_radius"  						"150"
-	"explosionradius" 								"350"
-	"impulse_force_explosions"   								"12500"
-	"cooldown_time"									"0.0"
-        "explosion_damage"								"125"
-
+	"fire_rate"                                "0.5"
+	"impulse_force"                            "7050"
 
 	// Behavior - Animation
-	"deployfirst_time"                          "0.72"
-	"deploy_time" 								"0.62"
+	"deployfirst_time"                          "2.42"
+	"deploy_time" 								"1.6"
     "holster_time"								"1.5"
-	"raise_time"  								"1.0"
-	"lower_time"  								"1.05"
+	"raise_time"  								"1.4"
+	"lower_time"  								"1.35"
 
 	// Behavior - Zoom/ADS
 	// NOTE: G7 handling is tuned like an AR
-	"zoom_time_in"							   "0.52"
-	"zoom_time_out"   						   "0.35"
+	"zoom_time_in"							   "0.32"
+	"zoom_time_out"   						   "0.25"
 
 	// Damage
 	//
-	"damage_near_value"                        "75"
-	"damage_far_value"                         "55"
-	"damage_very_far_value"                    "34"
+	"damage_near_value"                        "74"
+	"damage_far_value"                         "64"
+	"damage_very_far_value"                    "54"
 	"damage_rodeo"                             "220"
 
 	// Damage - Titan
@@ -99,7 +66,7 @@
 	"viewmodel_offset_ads"                     "0 -1.6 0"
 
 	// Projectile
-	"projectile_launch_speed"                  "3500"
+	"projectile_launch_speed"                  "91500"
 
     "bolt_hitsize_grow1_time"				    "0.123"  //~100m
     "bolt_hitsize_grow1_size"				    "0.33"
@@ -111,20 +78,20 @@
 	// Ammo
 	//
 	"ammo_pool_type"                           "bullet"
-	"ammo_clip_size"                           "1"
-	"ammo_stockpile_max"                       "15"
-	"ammo_default_total"                       "25"
+	"ammo_clip_size"                           "4"
+	"ammo_stockpile_max"                       "20"
+	"ammo_default_total"                       "20"
 	"ammo_min_to_fire"                         "1"
 	"ammo_no_remove_from_stockpile"            "1"
 	"reload_enabled"                           "1"
 
-	"reload_time"                              "4.4"
-	"reload_time_late1"                        "3.26"
-	"reload_time_late2"                        "2.64"
-	"reloadempty_time"                         "1.0"
-	"reloadempty_time_late1"                   "1.82"
-	"reloadempty_time_late2"                   "1.17"
-	"reloadempty_time_late3"                   "0.96"
+	"reload_time"                              "3.4"
+	"reload_time_late1"                        "2.26"
+	"reload_time_late2"                        "1.64"
+	"reloadempty_time"                         "3.0"
+	"reloadempty_time_late1"                   "2.82"
+	"reloadempty_time_late2"                   "2.17"
+	"reloadempty_time_late3"                   "1.96"
 	"allow_empty_click"                        "1"
 	"empty_reload_only"                        "0"
 
@@ -186,30 +153,30 @@
 
 	// Spread
 	//
-	"spread_stand_hip"							"5.5"
+	"spread_stand_hip"							"2.5"
     "spread_stand_hip_run"						"5.0"
     "spread_stand_hip_sprint"                   "5.5"
-    "spread_crouch_hip"   						"5.0"
+    "spread_crouch_hip"   						"2.0"
     "spread_air_hip"  							"6.0"
 
-    "spread_kick_on_fire_stand_hip"   			"1.75"
-    "spread_kick_on_fire_crouch_hip"  			"1.75"
-    "spread_kick_on_fire_air_hip" 				"1.75"
+    "spread_kick_on_fire_stand_hip"   			"0.75"
+    "spread_kick_on_fire_crouch_hip"  			"0.75"
+    "spread_kick_on_fire_air_hip" 				"0.75"
 
-    "spread_max_kick_stand_hip"   				"4.5"
-    "spread_max_kick_crouch_hip"  				"4.0"
-    "spread_max_kick_air_hip" 					"5.5"
+    "spread_max_kick_stand_hip"   				"3.5"
+    "spread_max_kick_crouch_hip"  				"3.0"
+    "spread_max_kick_air_hip" 					"4.5"
 
-	"spread_stand_ads"                         "0.3"
-	"spread_crouch_ads"                        "0.2"
-	"spread_air_ads"                           "0.6"
+	"spread_stand_ads"                         "0.0"
+	"spread_crouch_ads"                        "0.0"
+	"spread_air_ads"                           "0.0"
 
-	"spread_kick_on_fire_stand_ads"            "0.3"
-	"spread_kick_on_fire_crouch_ads"           "0.2"
+	"spread_kick_on_fire_stand_ads"            "0.0"
+	"spread_kick_on_fire_crouch_ads"           "0.0"
 	"spread_kick_on_fire_air_ads"              "0.0"
 
-	"spread_max_kick_stand_ads"                "0.2"
-	"spread_max_kick_crouch_ads"               "0.1"
+	"spread_max_kick_stand_ads"                "0.0"
+	"spread_max_kick_crouch_ads"               "0.0"
 	"spread_max_kick_air_ads"                  "0.0"
 
 	"spread_decay_rate"                        "6"
@@ -298,12 +265,12 @@
 	    {
 	    }
 
-		survival_finite_ammo
+		"survival_finite_ammo"
 		{
 			// Ammo
 			//
-			"ammo_stockpile_max"             "14"
-			"ammo_default_total"             "0"
+			"ammo_stockpile_max"             "4"
+			"ammo_default_total"             "160"
 			"ammo_no_remove_from_stockpile"  "0"
 			"uses_ammo_pool"                 "1"
 			"low_ammo_fraction"              "0.3"

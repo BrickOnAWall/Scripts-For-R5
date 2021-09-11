@@ -416,12 +416,17 @@ WeaponData
 	"bodygroup_ammo_index_count"			"7"
 
 	Mods
-	{
+
+{
+		survival_finite_ammo
+}	
         jump_kit
         {
        		"impulse_force"									"25500"
 			"impulse_force_explosions"						"65000"
         }
+
+          
         pro_screen
         {
 			"ui8_enable"		"1"
