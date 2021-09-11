@@ -1,4 +1,0 @@
-A version of my scripts without JustANormalUsers Framework, credit goes to there rightful owner.
-
-1. Put playlists_r5_patch or the orignal playlists_r5_patch into "Whatever you have the modded apex named"/platform and 
-2. scripts into your scripts folder makesure it's EXTRACTED AND LOOKS LIKE A NORMAL SCRIPTS FOLDER!
