@@ -220,6 +220,9 @@ void function CodeCallback_MapSpawn() // original script entry point
 	PrecacheModel( $"mdl/props/charm/charm_gas_canister.rmdl" )
 	PrecacheModel( $"mdl/props/charm/charm_jester.rmdl" )
 	PrecacheModel( $"mdl/props/charm/charm_nessy_ghost.rmdl" )
+	PrecacheModel( $"mdl/foliage/tree_green_forest_med_01.rmdl" )
+	PrecacheModel( $"mdl/foliage/leaves_ground_spread_02.rmdl" )
+	PrecacheModel( $"mdl/foliage/bush_green_forest_01.rmdl" )
 	PrecacheModel( $"mdl/props/charm/charm_clown.rmdl" )
 	PrecacheModel( $"mdl/props/charm/charm_witch.rmdl" )
 	

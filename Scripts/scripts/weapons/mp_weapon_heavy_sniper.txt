@@ -34,15 +34,15 @@
 
 	// Behavior - Firing
 	//
-	"fire_rate"                                "0.5"
+	"fire_rate"                                "1.5"
 	"impulse_force"                            "7050"
 
 	// Behavior - Animation
 	"deployfirst_time"                          "2.42"
-	"deploy_time" 								"1.6"
-    "holster_time"								"1.5"
-	"raise_time"  								"1.4"
-	"lower_time"  								"1.35"
+	"deploy_time" 								"1.2"
+    "holster_time"								"1.1"
+	"raise_time"  								"1.1"
+	"lower_time"  								"1.1"
 
 	// Behavior - Zoom/ADS
 	// NOTE: G7 handling is tuned like an AR
@@ -51,8 +51,8 @@
 
 	// Damage
 	//
-	"damage_near_value"                        "74"
-	"damage_far_value"                         "64"
+	"damage_near_value"                        "125"
+	"damage_far_value"                         "85"
 	"damage_very_far_value"                    "54"
 	"damage_rodeo"                             "220"
 
@@ -67,13 +67,25 @@
 
 	// Projectile
 	"projectile_launch_speed"                  "91500"
-
     "bolt_hitsize_grow1_time"				    "0.123"  //~100m
     "bolt_hitsize_grow1_size"				    "0.33"
     "bolt_hitsize_grow2_time"				    "0.246"  //~200m
     "bolt_hitsize_grow2_size"				    "1.25"
     "bolt_hitsize_growfinal_lerptime"		    "0.369"  //~300m
     "bolt_hitsize_growfinal_size"               "2.0"
+
+
+
+//Effect
+
+	"impact_effect_table" 							"pulse_bullet"
+	"vortex_impact_effect"							"P_impact_xo_shield_cp"
+	"vortex_absorb_effect"							"wpn_vortex_projectile_rifle_FP"
+	"vortex_absorb_effect_third_person"				"wpn_vortex_projectile_rifle"
+	"vortex_absorb_sound"							"Vortex_Shield_AbsorbBulletSmall"
+	"vortex_absorb_sound_1P_VS_3P"					"Vortex_Shield_AbsorbBulletSmall_1P_VS_3P"
+	"projectile_adjust_to_gun_barrel"				"1"
+
 
 	// Ammo
 	//
@@ -85,12 +97,12 @@
 	"ammo_no_remove_from_stockpile"            "1"
 	"reload_enabled"                           "1"
 
-	"reload_time"                              "3.4"
-	"reload_time_late1"                        "2.26"
+	"reload_time"                              "1.4"
+	"reload_time_late1"                        "1.26"
 	"reload_time_late2"                        "1.64"
-	"reloadempty_time"                         "3.0"
-	"reloadempty_time_late1"                   "2.82"
-	"reloadempty_time_late2"                   "2.17"
+	"reloadempty_time"                         "2.0"
+	"reloadempty_time_late1"                   "1.82"
+	"reloadempty_time_late2"                   "1.17"
 	"reloadempty_time_late3"                   "1.96"
 	"allow_empty_click"                        "1"
 	"empty_reload_only"                        "0"
@@ -182,13 +194,15 @@
 	"spread_decay_rate"                        "6"
     "spread_decay_delay"                       "0.21"
 
-	// Sound - Firing
-	//
-	"fire_sound_1_npc"                         "Weapon_G2A4_Fire_NPC"
-	"fire_sound_1_player_1p"                   "Weapon_G2A4_Fire_1P"
-	"fire_sound_2_player_1p"                   "Weapon_bulletCasings.Bounce"
-	"fire_sound_1_player_3p"                   "Weapon_G2A4_Fire_3P"
-	"fire_sound_2_player_3p"                   "Weapon_bulletCasings.Bounce"
+
+	//Sounds
+	"fire_sound_1_player_1p"						"LMG_shell"
+	"fire_sound_1_player_3p"						"LMG_shell"
+	"fire_sound_2_player_1p"						"Weapon_LMG_SecondShot_1P"
+	"fire_sound_2_player_3p"						""
+	"fire_sound_2_npc"								"Weapon_LMG_SecondShot_npc"
+	"sound_zoom_in"									"Weapon_LMG_ADS_In"
+	"sound_zoom_out"								"Weapon_LMG_ADS_Out"
 
 	// Sound - Low Ammo
 	"low_ammo_sound_name_1"                    "G2A4_LowAmmo_Shot1"
@@ -200,8 +214,6 @@
 
 	// Sound - Misc
 	"sound_dryfire"                            "assault_rifle_dryfire"
-	"sound_zoom_in"                            "Weapon_G2A4_ADS_In"
-	"sound_zoom_out"                           "Weapon_G2A4_ADS_Out"
 	"sound_trigger_pull"                       "assault_rifle_dryfire"
 	"sound_trigger_release"                    "assault_rifle_dryfire"
 
@@ -267,13 +279,13 @@
 
 		"survival_finite_ammo"
 		{
-			// Ammo
-			//
-			"ammo_stockpile_max"             "4"
-			"ammo_default_total"             "160"
-			"ammo_no_remove_from_stockpile"  "0"
-			"uses_ammo_pool"                 "1"
-			"low_ammo_fraction"              "0.3"
+            "ammo_default_total"			"200"
+            "ammo_stockpile_max"			"200"
+            "ammo_no_remove_from_stockpile"	"1"
+
+            "low_ammo_fraction" 			"0.3"
+
+	   		"uses_ammo_pool"				"0"
 		}
 
                   

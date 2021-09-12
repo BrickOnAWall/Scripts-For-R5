@@ -86,7 +86,7 @@
 
 	// Projectile
 
-	"projectile_launch_speed" 						"64000"
+	"projectile_launch_speed" 						"34000"
 	"projectiles_per_shot" 							"4"
 
 	"blast_pattern"									"doubletake"
@@ -324,11 +324,13 @@
 
 		"survival_finite_ammo"
 		{
-			"ammo_stockpile_max"             "24"
-			"ammo_default_total"             "0"
-			"ammo_no_remove_from_stockpile"  "0"
-			"uses_ammo_pool"                 "0"
-			"low_ammo_fraction"              "0.3"
+            "ammo_default_total"			"200"
+            "ammo_stockpile_max"			"200"
+            "ammo_no_remove_from_stockpile"	"1"
+
+            "low_ammo_fraction" 			"0.3"
+
+	   		"uses_ammo_pool"				"0"
 		}
 
 		"hopup_energy_choke"

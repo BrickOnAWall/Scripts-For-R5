@@ -3,10 +3,10 @@ global function SetupOverrideSpawnSurvivalCharacter
 global function SetupSurvival
 global function SetupModelSpawner
 global function SetupSurvivalLoot
+global function SetupCustomLoot
 global function SetupSurvivalIncapShieldBot
 global function SetupAbilities
 global function SetupWeapons
-global function SetupModdedWeapons
 
 void function SetupChangeSurvivalCharacterClass()
 {
@@ -84,26 +84,6 @@ void function SetupWeapons()
 }
 
 
-
-void function SetupModdedWeapons()
-{
-	#if UI
-
-	SetupDevCommand( "Advanced Dev Tool", "give mp_weapon_advanced_mdlspawner" )
-	SetupDevCommand( "UFW ", "give mp_weapon_ufw" )
-	SetupDevCommand( "Self Propelled Launcher ", "give mp_weapon_self_propelled_launcher" )
-	SetupDevCommand( "LarZ V2 ", "give mp_weapon_laser_canon" )
-        SetupDevCommand( "Rocket Launcher ", "give mp_weapon_rocket_launcher" )
-        SetupDevCommand( "Volternator ", "give mp_weapon_volternator" )
-        SetupDevCommand( "Code Name ShatterBlast ", "give mp_weapon_shatterblast" )
-        SetupDevCommand( "Infinity Rifle From JustANormalUser#3770 ", "give mp_weapon_infinity_rifle" )
-        SetupDevCommand( "EPG From JustANormalUser#3770 ", "give mp_weapon_epg" )
-	SetupDevCommand( "50, Caliber Sniper ", "give mp_weapon_heavy_sniper" )
-	SetupDevCommand( "Quad Sniper ", "give mp_weapon_quad_launcher" )
-	#endif
-}
-
-
 void function SetupSurvival()
 {
 	#if UI
@@ -128,6 +108,13 @@ void function SetupSurvivalLoot( var categories )
 {
 	#if UI
 		RunClientScript( "SetupSurvivalLoot", categories )
+	#endif
+}
+
+void function SetupCustomLoot( var categories )
+{
+	#if UI
+		RunClientScript( "SetupCustomLoot", categories )
 	#endif
 }
 
@@ -167,12 +154,13 @@ void function SetupAbilities()
 void function SetupModelSpawner()
 {
 	#if UI
-	SetupDevCommand( "marvin", "SetMDLSpawnerModel mdl/robots/marvin/marvin_gladcard.rmdl" )
-	SetupDevCommand( "droppod_loot_LL_holo", "SetMDLSpawnerModel mdl/vehicle/droppod_loot/droppod_loot_LL_holo.rmdl" )
-	SetupDevCommand( "death_box_01", "SetMDLSpawnerModel mdl/props/death_box/death_box_01.rmdl" )
-	SetupDevCommand( "drone_frag", "mdl/robots/drone_frag/drone_frag.rmdl" )
-	SetupDevCommand( "droppod_fireteam", "SetMDLSpawnerModel mdl/vehicle/droppod_fireteam/droppod_fireteam.rmdl" )
-	SetupDevCommand( "droppod_loot_LL_holo", "mdl/vehicle/droppod_loot/droppod_loot_LL_holo.rmdl" )
+	SetupDevCommand( "Mr, Marvin", "SetMDLSpawnerModel mdl/robots/marvin/marvin_gladcard.rmdl" )
+	SetupDevCommand( "Dropped Loot Hollo", "SetMDLSpawnerModel mdl/vehicle/droppod_loot/droppod_loot_LL_holo.rmdl" )
+	SetupDevCommand( "Death Box", "SetMDLSpawnerModel mdl/props/death_box/death_box_01.rmdl" )
+	SetupDevCommand( "TitanFall Drop Pod", "SetMDLSpawnerModel mdl/vehicle/droppod_fireteam/droppod_fireteam.rmdl" )
+	SetupDevCommand( "Tree", "SetMDLSpawnerModel mdl/foliage/tree_green_forest_med_01.rmdl" )
+	SetupDevCommand( "Leaves On The Ground", "SetMDLSpawnerModel mdl/foliage/leaves_ground_spread_02.rmdl" )
+	SetupDevCommand( "Bush ", "SetMDLSpawnerModel mdl/foliage/bush_green_forest_01.rmdl" )
 	#endif
 }
 

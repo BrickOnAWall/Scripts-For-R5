@@ -96,7 +96,7 @@ WeaponData
 
 	"deployfirst_time"								"1.5"
 
-	"ammo_clip_size"   								"12"
+	"ammo_clip_size"   								"24"
 	"ammo_per_shot" 				                "1"
 	"ammo_min_to_fire"								"1"
 
@@ -286,11 +286,13 @@ WeaponData
 
 		"survival_finite_ammo"
 		{
-			"ammo_stockpile_max"             "24"
-			"ammo_default_total"             "0"
-			"ammo_no_remove_from_stockpile"  "0"
-			"uses_ammo_pool"                 "0"
-			"low_ammo_fraction"              "0.3"
+            "ammo_default_total"			"200"
+            "ammo_stockpile_max"			"200"
+            "ammo_no_remove_from_stockpile"	"1"
+
+            "low_ammo_fraction" 			"0.3"
+
+	   		"uses_ammo_pool"				"0"
 		}
 
         hopup_turbocharger
@@ -303,38 +305,17 @@ WeaponData
 // MY CUSTOM HOP UP
         hopup_beam
  {
-      	"fire_rate"                                "500000"
-	"impulse_force"                            "500000000000"
-	"deployfirst_time"                          "1.42"
-	"deploy_time" 								"0.6"
-        "holster_time"								"0.5"
-	"raise_time"  								"0.4"
-	"lower_time"  								"0.35"
+      	"fire_rate"                                "*10000"
 	"damage_near_value"                        "7"
 	"damage_far_value"                         "6"
 	"damage_very_far_value"                    "5"
 	"damage_rodeo"                             "5"
-	"projectile_launch_speed"                  "100000000000000000000000"
-        "bolt_hitsize_grow1_time"				    "0.123"  //~100m
-        "bolt_hitsize_grow1_size"				    "0.33"
-        "bolt_hitsize_grow2_time"				    "0.246"  //~200m
-        "bolt_hitsize_grow2_size"				    "1.25"
-        "bolt_hitsize_growfinal_lerptime"		    "0.369"  //~300m
-        "bolt_hitsize_growfinal_size"               "2.0"
-	"ammo_clip_size"                           "100000000000"
-	"ammo_stockpile_max"                       "100000000000"
-	"ammo_default_total"                       "10000000000"
-	"ammo_min_to_fire"                         "0"
-	"ammo_no_remove_from_stockpile"            "0"
-	"reload_enabled"                           "1"
-	"reload_time"                              "1.4"
-	"reload_time_late1"                        "1.26"
-	"reload_time_late2"                        "0.64"
-	"reloadempty_time"                         "1.0"
-	"reloadempty_time_late1"                   "1.82"
-	"reloadempty_time_late2"                   "1.17"
-	"reloadempty_time_late3"                   "0.96"
-	"allow_empty_fire"								"1"
+	"projectile_launch_speed"                  "*100"
+	"ammo_clip_size"                           "*100000000"
+	"ammo_stockpile_max"                       "*100000000"
+	"ammo_default_total"                       "*100000000"
+	"reload_enabled"                           "0"
+	"allow_empty_fire"                      	"1"
 	"viewkick_pattern"                          "g2"
 
     "viewkick_spring" 						    "g2_vkp"

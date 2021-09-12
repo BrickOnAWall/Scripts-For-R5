@@ -282,10 +282,15 @@ void function OnWeaponAttack_OrdnanceControl( entity player, entity weapon, stri
 		{
 			string nextOrdnance = GetNextOrdnance( player, data.ref )
 			if ( nextOrdnance != "" )
-				thread function () : ( player, nextOrdnance )
+				thread function () : ( player, weapon, nextOrdnance )
 				{
-					wait 1
+					wait weapon.GetWeaponSettingFloat(eWeaponVar.toss_time)
 					SwitchPlayerToOrdnance( player, nextOrdnance )
+				}()
+			else thread function () : ( player, weapon, nextOrdnance )
+				{
+					wait weapon.GetWeaponSettingFloat(eWeaponVar.toss_time)
+					player.SetActiveWeaponBySlot( eActiveInventorySlot.mainHand, WEAPON_INVENTORY_SLOT_PRIMARY_2 )
 				}()
 		}
 	}
@@ -1098,7 +1103,7 @@ void function EquipAttachments_Internal( entity player, entity weapon, string it
 		LootData weaponData = SURVIVAL_Loot_GetLootDataByRef( GetWeaponClassName( weapon ) )
 		LootData modData = SURVIVAL_Loot_GetLootDataByRef( item )
 
-		Remote_CallFunction_NonReplay( player, "ServerCallback_AttachedMod", weaponData.index, modData.index )
+		//Remote_CallFunction_NonReplay( player, "ServerCallback_AttachedMod", weaponData.index, modData.index )
 
 		mods.append( item )
 

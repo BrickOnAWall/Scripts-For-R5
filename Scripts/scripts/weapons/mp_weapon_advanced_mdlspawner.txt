@@ -230,9 +230,9 @@ WeaponData
 
 		survival_finite_ammo
         {
-            "ammo_default_total"			"0"
-            "ammo_stockpile_max"			"20"
-            "ammo_no_remove_from_stockpile"	"0"
+            "ammo_default_total"			"200"
+            "ammo_stockpile_max"			"200"
+            "ammo_no_remove_from_stockpile"	"1"
 
             "low_ammo_fraction" 			"0.3"
 
