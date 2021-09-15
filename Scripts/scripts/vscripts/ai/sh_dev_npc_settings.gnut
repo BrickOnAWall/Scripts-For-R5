@@ -158,11 +158,12 @@ void function SetupModelSpawner()
 	SetupDevCommand( "Dropped Loot Hollo", "SetMDLSpawnerModel mdl/vehicle/droppod_loot/droppod_loot_LL_holo.rmdl" )
 	SetupDevCommand( "Death Box", "SetMDLSpawnerModel mdl/props/death_box/death_box_01.rmdl" )
 	SetupDevCommand( "TitanFall Drop Pod", "SetMDLSpawnerModel mdl/vehicle/droppod_fireteam/droppod_fireteam.rmdl" )
-	SetupDevCommand( "Tree", "SetMDLSpawnerModel mdl/foliage/tree_green_forest_med_01.rmdl" )
-	SetupDevCommand( "Leaves On The Ground", "SetMDLSpawnerModel mdl/foliage/leaves_ground_spread_02.rmdl" )
-	SetupDevCommand( "Bush ", "SetMDLSpawnerModel mdl/foliage/bush_green_forest_01.rmdl" )
-	#endif
-}
+        SetupDevCommand( "Tree, Kings Canyon ONLY", "SetMDLSpawnerModel mdl/foliage/tree_green_forest_med_01.rmdl" )
+	SetupDevCommand( "Leaves, Kings Canyon ONLY", "SetMDLSpawnerModel mdl/foliage/leaves_ground_spread_02.rmdl" )
+	SetupDevCommand( "Bush, Kings Canyon ONLY", "SetMDLSpawnerModel mdl/foliage/bush_green_forest_01.rmdl" )
+        #endif
+}     
+
 
 void function SetupSurvivalIncapShieldBot()
 {

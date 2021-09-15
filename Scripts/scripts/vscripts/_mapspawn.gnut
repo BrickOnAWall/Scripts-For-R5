@@ -207,6 +207,9 @@ void function CodeCallback_MapSpawn() // original script entry point
 	
 	//Charms - todo: find a better way
 
+
+
+
 	PrecacheModel( $"mdl/props/charm/charm_fireball.rmdl" )
 	PrecacheModel( $"mdl/props/charm/charm_yeti.rmdl" )
 	PrecacheModel( $"mdl/props/charm/charm_crow.rmdl" )
@@ -220,9 +223,6 @@ void function CodeCallback_MapSpawn() // original script entry point
 	PrecacheModel( $"mdl/props/charm/charm_gas_canister.rmdl" )
 	PrecacheModel( $"mdl/props/charm/charm_jester.rmdl" )
 	PrecacheModel( $"mdl/props/charm/charm_nessy_ghost.rmdl" )
-	PrecacheModel( $"mdl/foliage/tree_green_forest_med_01.rmdl" )
-	PrecacheModel( $"mdl/foliage/leaves_ground_spread_02.rmdl" )
-	PrecacheModel( $"mdl/foliage/bush_green_forest_01.rmdl" )
 	PrecacheModel( $"mdl/props/charm/charm_clown.rmdl" )
 	PrecacheModel( $"mdl/props/charm/charm_witch.rmdl" )
 	
@@ -233,6 +233,19 @@ void function CodeCallback_MapSpawn() // original script entry point
 	PrecacheModel( $"mdl/menu/xp_badge.rmdl" )
 	PrecacheModel( $"mdl/menu/coin.rmdl" )
 	PrecacheModel( $"mdl/currency/crafting/currency_crafting_epic.rmdl" )
+
+//CUSTOM PRECHACHE
+if(GetMapName() == "mp_rr_canyonlands_64k_x_64k")
+{
+	PrecacheModel( $"mdl/foliage/tree_green_forest_med_01.rmdl" )
+	PrecacheModel( $"mdl/foliage/leaves_ground_spread_02.rmdl" )
+	PrecacheModel( $"mdl/foliage/bush_green_forest_01.rmdl" )
+}
+//END 
+
+
+
+
 
 	PrecacheWeapon( $"mp_weapon_melee_survival" )
 	PrecacheWeapon( $"mp_weapon_quad_launcher" )
