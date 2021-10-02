@@ -25,16 +25,21 @@ WeaponData
 	"stat_accuracy"   								"50"
 	"stat_rof"										"60"
 
-    "projectile_launch_speed"						"19500"
+    "projectile_launch_speed"						"25500"
 
 	// Models
 	"viewmodel"   									"mdl/weapons/alternator_smg/ptpov_alternator_smg.rmdl"
 	"playermodel" 									"mdl/weapons/alternator_smg/w_alternator_smg.rmdl"
+	"projectilemodel" 								"mdl/dev/empty_model.rmdl"
 	"holster_type"									"rifle"
 
-	"chroma_color"									".9 1 .2"
+	"chroma_color"									"7.5 5 .5"
 
 	"alt_fire_anim_count"							"1"
+
+	"projectile_trail_effect_0" 					"P_projectile_lstar"
+	"impact_effect_table" 							"lstar"
+	"projectile_adjust_to_gun_barrel"				"1"
 
 	"sound_dryfire"									"hemlok_dryfire"
 	"sound_pickup"									"wpn_pickup_Rifle_1P"
@@ -93,9 +98,9 @@ WeaponData
 	"low_ammo_sound_name_9"							"Hemlok_LowAmmo_Shot3"
 
 	// Behavior
-	"fire_rate"   									"12"
-	"burst_fire_count"								"5"
-	"burst_fire_delay"								"0.3"
+	"fire_rate"   									"16"
+	"burst_fire_count"								"7"
+	"burst_fire_delay"								"0.4"
 
 
 	// Ammo

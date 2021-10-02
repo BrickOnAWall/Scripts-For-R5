@@ -275,7 +275,7 @@
 				///////////////////////////////////////////////////////////////////////////////////
 				enable_small_pheonix				 0 // Enables Small Pheonix 
 
-				custom_weapon_list								"mp_weapon_quad_launcher mp_weapon_laser_canon mp_weapon_heavy_sniper mp_weapon_volternator mp_weapon_advanced_mdlspawner mp_weapon_rocket_launcher mp_weapon_self_propelled_launcher mp_weapon_shatterblast mp_weapon_ufw mp_weapon_infinity_rifle mp_weapon_epg"
+				custom_weapon_list								"mp_weapon_burst_pistol mp_weapon_quad_launcher mp_weapon_laser_canon mp_weapon_heavy_sniper mp_weapon_volternator mp_weapon_advanced_mdlspawner mp_weapon_rocket_launcher mp_weapon_self_propelled_launcher mp_weapon_shatterblast mp_weapon_ufw mp_weapon_infinity_rifle mp_weapon_epg"
 				custom_hopup_override_weapon_attachments		1
 
 				mp_weapon_epg_tier								2

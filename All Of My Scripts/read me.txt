@@ -1,0 +1,9 @@
+A new version of scripts with JustANormalUser's Framework Enjoy!
+
+1. Put playlists_r5_patch into platform and replace your playlists file.
+2. Put scripts into your scripts folder make sure it's EXTRACTED AND LOOKS LIKE A NORMAL SCRIPTS FOLDER!
+3. Run the game and see if all goes well. If somthing is broken message me about it.
+
+
+Thank You And Enjoy.
+Discord: Average User.#3903
