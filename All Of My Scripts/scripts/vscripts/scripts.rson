@@ -265,6 +265,7 @@ Scripts:
 
 	weapons/mp_weapon_grenade_emp.nut
 	weapons/mp_weapon_lmg.nut
+        weapons/mp_weapon_thermite_launcher.nut
 	weapons/mp_weapon_lstar.nut
 	weapons/mp_weapon_energy_ar.nut
 	weapons/mp_weapon_rspn101.nut

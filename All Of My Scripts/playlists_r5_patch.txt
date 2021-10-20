@@ -275,7 +275,7 @@
 				///////////////////////////////////////////////////////////////////////////////////
 				enable_small_pheonix				 0 // Enables Small Pheonix 
 
-				custom_weapon_list								"mp_weapon_burst_pistol mp_weapon_quad_launcher mp_weapon_laser_canon mp_weapon_heavy_sniper mp_weapon_volternator mp_weapon_advanced_mdlspawner mp_weapon_rocket_launcher mp_weapon_self_propelled_launcher mp_weapon_shatterblast mp_weapon_ufw mp_weapon_infinity_rifle mp_weapon_epg"
+				custom_weapon_list								"mp_weapon_peace_maker mp_weapon_eman mp_weapon_machine_smg mp_weapon_plasma_accelerator mp_weapon_light_speed mp_weapon_thermite_launcher mp_weapon_beamer mp_weapon_burst_pistol mp_weapon_quad_launcher mp_weapon_laser_canon mp_weapon_heavy_sniper mp_weapon_volternator mp_weapon_advanced_mdlspawner mp_weapon_rocket_launcher mp_weapon_self_propelled_launcher mp_weapon_shatterblast mp_weapon_ufw mp_weapon_infinity_rifle mp_weapon_epg"
 				custom_hopup_override_weapon_attachments		1
 
 				mp_weapon_epg_tier								2
@@ -287,6 +287,16 @@
 				mp_weapon_epg_med_chance						2.0
 				mp_weapon_epg_high_chance						3.0
 				mp_weapon_epg_class								"assault"
+
+				mp_weapon_thermite_launcher_tier                              4
+				mp_weapon_thermite_launcher_base_mods                         ""
+				mp_weapon_thermite_launcher_attachments                       "barrel mag sight grip hopup"
+				mp_weapon_thermite_launcher_pickup_sound_1p                   "wpn_pickup_Rifle_1P"
+				mp_weapon_thermite_launcher_pickup_sound_3p                   "wpn_pickup_Rifle_1P"
+				mp_weapon_thermite_launcher_low_chance                        1.0
+				mp_weapon_thermite_launcher_med_chance                        5.0
+				mp_weapon_thermite_launcher_high_chance                       10.0
+				mp_weapon_thermite_launcher_class                             "assault"
 				
 				mp_weapon_burst_pistol_tier								3
 				mp_weapon_burst_pistol_base_mods							""
@@ -356,9 +366,19 @@
 				hopup_cool_icon									"rui/pilot_loadout/mods/hopup_em_choke"
 				hopup_cool_slot									"hopup"
 				hopup_cool_low_chance							1.0
-				hopup_cool_med_chance							2.0
-				hopup_cool_high_chance							5.0
+				hopup_cool_med_chance							1.0
+				hopup_cool_high_chance							1.0
 
+
+				laser_hopup_name                 "Skeptation's Laser!"
+				laser_hopup_desc                 "Adds frickin' laser beams"
+				laser_hopup_tier                    2
+				laser_hopup_icon                    "rui/pilot_loadout/mods/hopup_em_choke"
+				laser_hopup_model                "mdl/weapons_r5/loot/_master/w_loot_wep_mods_chip.rmdl"
+				laser_hopup_slot                                    "hopup"
+				laser_hopup_low_chance                0
+				laser_hopup_med_chance                0
+				laser_hopup_high_chance                0
 
 				hopup_beam_name									"Lazer Hop-Up"
 				hopup_beam_desc									"A mattalic plated hopup. Wonder what it does."
@@ -367,8 +387,8 @@
 				hopup_beam_icon									"rui/pilot_loadout/mods/hopup_em_choke"
 				hopup_beam_slot									"hopup"
 				hopup_beam_low_chance							1.0
-				hopup_beam_med_chance							2.0
-				hopup_beam_high_chance							5.0
+				hopup_beam_med_chance							1.0
+				hopup_beam_high_chance							1.0
 
  				hopup_sight_name								"Infinity Sight"
 				hopup_sight_desc								"One part of many."
@@ -377,8 +397,8 @@
 				hopup_sight_icon								"rui/weapon_icons/attachments/hcog"
 				hopup_sight_slot								"sight"
 				hopup_sight_low_chance							1.0
-				hopup_sight_med_chance							2.0
-				hopup_sight_high_chance							5.0
+				hopup_sight_med_chance							1.0
+				hopup_sight_high_chance							1.0
 				
 				hopup_mag_name									"Infinity Mag"
 				hopup_mag_desc									"One part of many."
@@ -387,8 +407,8 @@
 				hopup_mag_icon									"rui/pilot_loadout/mods/light_mag"
 				hopup_mag_slot									"mag"
 				hopup_mag_low_chance							1.0
-				hopup_mag_med_chance							2.0
-				hopup_mag_high_chance							5.0
+				hopup_mag_med_chance							1.0
+				hopup_mag_high_chance							1.0
 				
 				hopup_barrel_name								"Infinity Barrel"
 				hopup_barrel_desc								"One part of many."
@@ -397,8 +417,8 @@
 				hopup_barrel_icon								"rui/pilot_loadout/mods/barrel_stabilizer"
 				hopup_barrel_slot								"barrel"
 				hopup_barrel_low_chance							1.0
-				hopup_barrel_med_chance							2.0
-				hopup_barrel_high_chance						5.0
+				hopup_barrel_med_chance							1.0
+				hopup_barrel_high_chance						1.0
 				
 				hopup_stock_name								"Infinity Stock"
 				hopup_stock_desc								"One part of many."
@@ -407,8 +427,8 @@
 				hopup_stock_icon								"rui/pilot_loadout/mods/tactical_stock"
 				hopup_stock_slot								"grip"
 				hopup_stock_low_chance							1.0
-				hopup_stock_med_chance							2.0
-				hopup_stock_high_chance							5.0
+				hopup_stock_med_chance							1.0
+				hopup_stock_high_chance							1.0
 				
 				hopup_infinity_name								"Infinity Hop-Up"
 				hopup_infinity_desc								"One part of many."
@@ -417,8 +437,8 @@
 				hopup_infinity_icon								"rui/pilot_loadout/mods/hopup_em_choke"
 				hopup_infinity_slot								"hopup"
 				hopup_infinity_low_chance						1.0
-				hopup_infinity_med_chance						2.0
-				hopup_infinity_high_chance						5.0
+				hopup_infinity_med_chance						1.0
+				hopup_infinity_high_chance						1.0
 
 			}
 			maps
