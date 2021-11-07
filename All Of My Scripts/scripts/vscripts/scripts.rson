@@ -265,7 +265,6 @@ Scripts:
 
 	weapons/mp_weapon_grenade_emp.nut
 	weapons/mp_weapon_lmg.nut
-        weapons/mp_weapon_thermite_launcher.nut
 	weapons/mp_weapon_lstar.nut
 	weapons/mp_weapon_energy_ar.nut
 	weapons/mp_weapon_rspn101.nut
@@ -289,6 +288,8 @@ Scripts:
 	
 	weapons/mp_weapon_shotgun.nut
 	weapons/mp_weapon_sniper.nut
+	weapons/mp_weapon_thermite_launcher.nut
+	weapons/mp_weapon_lobatac.nut
 	weapons/mp_weapon_thermite_grenade.nut
 	weapons/mp_weapon_zipline.nut
 	weapons/mp_weapon_alternator_smg.nut
@@ -473,6 +474,8 @@ Scripts:
 
 	mp/_mobility_experiments.gnut
 	mp/_model_viewer.nut
+
+	mp/_base_cmds.gnut
 ]
 
 When: "SERVER"

@@ -15,7 +15,7 @@
 	"longdesc"                                 "#WPN_G2_LONGDESC"
 
 	"weapon_type_flags"							"WPT_PRIMARY"
-	
+
 	// UI - HUD
 	"hud_icon"                                 "rui/weapon_icons/r5/weapon_g7"
 
@@ -276,7 +276,37 @@
 			"low_ammo_fraction"              "0.3"
 		}
 
-                  
+        hopup_card
+        {
+			"ammo_clip_size"                           "15"
+			"damage_near_value"   							"13"
+   			"damage_far_value"								"11"
+    		"damage_very_far_value"							"10"
+    		"damage_near_value_titanarmor"					"12"
+    		"damage_far_value_titanarmor" 					"12"
+   			"damage_very_far_value_titanarmor" 				"12"
+			"fire_rate"                                 "15.0"
+            "burst_fire_count"                          "4"
+            "burst_fire_delay"                          "0.225"
+
+			// Viewkick - Pitch
+            "viewkick_pitch_base"                       "1.5"
+            "viewkick_pitch_random"                     "1.5"
+            "viewkick_pitch_softScale"                  "3.7"
+            "viewkick_pitch_hardScale"                  "0.6"
+
+            // Viewkick - Yaw
+            "viewkick_yaw_base"                         "3.0"
+            "viewkick_yaw_random"                       "3.0"
+            "viewkick_yaw_softScale"                    "2.3"
+            "viewkick_yaw_hardScale"                    "0.1"
+
+            // Viewkick - Scale
+            "viewkick_scale_valueDecayDelay"            "0.48"
+            "viewkick_scale_valueDecayRate"             "200"
+		}
+		}
+
 		hopup_double_tap
 		{
             //exists to allow altfire_double_tap toggle mod
@@ -315,7 +345,7 @@
             "viewkick_scale_valueDecayRate"             "200"
 		}
 // end HAS_DOUBLE_TAP
-      
+
 
         // G2 non-fullscreen optics override normal sniper handling settings to be snappier
         optic_cq_hcog_classic
@@ -405,13 +435,13 @@
 			"ammo_clip_size"  "++10"
 		}
 
-               
-                                                                                                     
-                    
-         
-                                                                                          
-         
-      
+
+
+
+
+
+
+
 	}
 
 	// RUI

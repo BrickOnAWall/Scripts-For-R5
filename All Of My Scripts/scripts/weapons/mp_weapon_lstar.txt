@@ -478,13 +478,13 @@ WeaponData
     //"clip_bodygroup_show_for_milestone_2"	"0"
     //"clip_bodygroup_show_for_milestone_3"	"0"
 
-               
-         
-  
-                                       
-                                       
-  
-      
+
+
+
+
+
+
+
 
 	Mods
 	{
@@ -545,13 +545,11 @@ WeaponData
             "viewmodel_offset_zoom_frac_end"        "0.8"
         }
 
-               
-                                                                                                           
-                    
-         
-                                                                                          
-         
-      
+
+
+
+
+
 	}
 
 	"ui1_enable"		"1"

@@ -1,11 +1,19 @@
 #base "_base_assault_rifle.txt"
 
-                   
+
 #base "_base_mags_energy.txt"
-      
+
 
 WeaponData
 {
+	"tier"    "2"
+	"attachments"            "barrel mag sight grip"
+	"low_chance"            "5.0"
+	"med_chance"            "10.0"
+	"high_chance"            "25.0"
+	"class"                    "assault"
+
+
 	// General
 	"printname"   									"LarZ V2"
 	"shortprintname"								"LarZ V2"
@@ -295,6 +303,15 @@ WeaponData
 	   		"uses_ammo_pool"				"0"
 		}
 
+		hopup_card
+        {
+			"damage_near_value"   							"24"
+   			"damage_far_value"								"24"
+    		"damage_very_far_value"							"24"
+    		"damage_near_value_titanarmor"					"24"
+    		"damage_far_value_titanarmor" 					"24"
+   			"damage_very_far_value_titanarmor" 				"24"
+		}
 
         hopup_turbocharger
         {
@@ -417,7 +434,7 @@ WeaponData
 	"low_ammo_sound_name_5"                    "G2A4_LowAmmo_Shot5"
 	"low_ammo_sound_name_6"                    "G2A4_LowAmmo_Shot6"
 
-	
+
 	// Sound - Misc
 	"sound_dryfire"                            "assault_rifle_dryfire"
 	"sound_zoom_in"                            "Weapon_G2A4_ADS_In"
@@ -577,7 +594,7 @@ WeaponData
             "dof_zoom_nearDepthEnd"			"12.3"
 		}
 
-                   
+
         energy_mag_l1
 		{
 			"ammo_clip_size"   					"28"
@@ -592,15 +609,15 @@ WeaponData
 		{
 			"ammo_clip_size"   					"36"
 		}
-      
 
-               
-                                                                                                     
-                    
-         
-                                                                                          
-         
-      
+
+
+
+
+
+
+
+
 	}
 
 	"ui1_enable"		"1"

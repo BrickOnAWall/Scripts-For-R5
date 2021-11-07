@@ -1,0 +1,5 @@
+The Commands For Map Spawn Are	PrecacheWeapon( $"mp_weapon_frag_flinger" ) 
+The Commands For Dev Menu Are 	SetupDevCommand( "Frag Flinger", "give mp_weapon_frag_flinger" )
+ 
+The Command For The JANU's Framework is  mp_weapon_frag_flinger 
+If you use JANU's Framework you do not need to map spawn or use the dev menu! 

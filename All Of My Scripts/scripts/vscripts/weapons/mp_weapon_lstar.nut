@@ -75,8 +75,8 @@ int function LSTAR_Proto_TitanAttack( entity weapon, WeaponPrimaryAttackParams a
 	vector originalPos = attackParams.pos
 
 	const float ROTATION_SPEED = 1.0
-	const float SPREAD_SIZE_BASE = 40.0
-	const float SPREAD_SIZE_RANGE = 40.0
+	const float SPREAD_SIZE_BASE = 20.0
+	const float SPREAD_SIZE_RANGE = 20.0
 
 	vector upDir     = <0, 0, 1.0>
 	vector sideDir   = CrossProduct( upDir, attackParams.dir )

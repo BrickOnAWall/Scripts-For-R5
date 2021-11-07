@@ -7,6 +7,14 @@
 
 "WeaponData"
 {
+	"tier"    "2"
+	"attachments"            "barrel mag sight grip"
+	"low_chance"            "5.0"
+	"med_chance"            "10.0"
+	"high_chance"            "25.0"
+	"class"                    "sniper"
+
+	
 	// General
 	//
 	"printname"                                "50, Cal"
@@ -89,7 +97,7 @@
 
 	// Ammo
 	//
-	"ammo_pool_type"                           "bullet"
+	"ammo_pool_type"                           "highcal"
 	"ammo_clip_size"                           "4"
 	"ammo_stockpile_max"                       "20"
 	"ammo_default_total"                       "20"

@@ -41,7 +41,7 @@ WeaponData
 	"playermodel" 									"mdl/weapons/rspn101/w_rspn101.rmdl"
 	"holster_type"									"rifle"
 
-	"chroma_color"									"1 .8 .4"
+	"chroma_color"									"1.8.4"
 
 	"OnWeaponActivate"                              "OnWeaponActivate_R101"
     "OnWeaponDeactivate"                            "OnWeaponDeactivate_R101"

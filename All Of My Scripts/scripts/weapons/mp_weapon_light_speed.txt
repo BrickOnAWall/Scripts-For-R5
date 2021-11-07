@@ -6,6 +6,14 @@
 
 WeaponData
 {
+	"tier"    "2"
+	"attachments"            "barrel mag sight grip"
+	"low_chance"            "5.0"
+	"med_chance"            "10.0"
+	"high_chance"            "25.0"
+	"class"                    "assault"
+
+	
 	// General
 	"printname"   									"L-S MK2"
 	"shortprintname"								"L-S MK2"

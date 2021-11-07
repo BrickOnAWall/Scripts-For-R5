@@ -708,7 +708,14 @@ void function RegisterWeapon( CustomWeaponData weaponData )
 		//RegisterCustomWeaponDamageSource(weaponData.className)
 	#endif
 	// rarity
-	data.tier = weaponData.tier
+	try
+	{
+		data.tier = GetWeaponInfoFileKeyField_GlobalInt( data.baseWeapon, "tier" )
+	}
+	catch (ex)
+	{
+		throw "Weapon Var \"tier\" not found - make sure it is set up correctly."
+	}
 	// Copy pasted from SURVIVAL_Loot_All_InitShared
 	data.pickupString = GetWeaponInfoFileKeyField_GlobalString( data.baseWeapon, "printName" )
 	data.desc = GetWeaponInfoFileKeyField_GlobalString( data.baseWeapon, "description" )
@@ -717,19 +724,36 @@ void function RegisterWeapon( CustomWeaponData weaponData )
 	data.countPerDrop = 1
 
 	// Pickup sounds. 
-	data.pickupSound_3p = weaponData.pickupSound3p
-	data.pickupSound_1p = weaponData.pickupSound1p
+	try
+	{
+		data.pickupSound_3p = GetWeaponInfoFileKeyField_GlobalString( data.baseWeapon, "pickup_sound_3p" )
+	}
+	catch (ex2)
+	{
+		data.pickupSound_3p = "survival_loot_pickup_3p_weapon_rspn101"
+	}
+
+	try
+	{
+		data.pickupSound_1p = GetWeaponInfoFileKeyField_GlobalString( data.baseWeapon, "pickup_sound_1p" )
+	}
+	catch (ex3)
+	{
+		data.pickupSound_1p = "survival_loot_pickup_weapon_rspn101"
+	}
+
 	// Ammo type - also will FINALLY show up on HUD when you equip the weapon :D
 	if ( GetWeaponInfoFileKeyField_Global( data.baseWeapon, "ammo_pool_type" ) != null )
 		data.ammoType = GetWeaponInfoFileKeyField_GlobalString( data.baseWeapon, "ammo_pool_type" )
 
 	// loot tags is just weapon type in disguise.
-	data.lootTags = [ weaponData.weaponType ]
+	data.lootTags = [ expect string(GetCustomWeaponVar(data.baseWeapon, "class")) ]
 	data.lootType = eLootType.MAINWEAPON
 	
 	// sort the attachments so it appears like vanilla and not messed up
 	// if it's typed incorrectly in playlists
-	weaponData.supportedAttachments.sort(
+	array<string> supportedAttachments = split( expect string( GetCustomWeaponVar(data.baseWeapon, "attachments") ), " " )
+	supportedAttachments.sort(
 		int function( string attachmentA, string attachmentB ) : ()
 		{
 			int aIndex = attachmentSortOrder.find( attachmentA )
@@ -744,9 +768,9 @@ void function RegisterWeapon( CustomWeaponData weaponData )
 	
 
 
-	data.supportedAttachments = weaponData.supportedAttachments
+	data.supportedAttachments = supportedAttachments
 	// base mods, come with the weapon.
-	data.baseMods = weaponData.baseMods
+	data.baseMods = []
 	
 	// index goes above 100 with custom items, this is why we extended the remote function.
 	data.index = file.lootIndexToString.len()
@@ -761,23 +785,41 @@ void function RegisterWeapon( CustomWeaponData weaponData )
 		if ( data.model != $"" )
 			PrecacheModel( data.model )
 		// Add the item to the loot pool
-		if (!weaponData.isCP)
+		float lowChance = expect float( GetCustomWeaponVar(data.baseWeapon, "low_chance") )
+		float medChance = expect float( GetCustomWeaponVar(data.baseWeapon, "med_chance") )
+		float highChance = expect float( GetCustomWeaponVar(data.baseWeapon, "high_chance") )
+		
+		if (!(expect bool(GetCustomWeaponVarWithDefault(data.baseWeapon, "care_package_weapon", false))))
 		{
-			AddCustomItemToLootPool(data.ref, "weapon_low", weaponData.lowWeaponChance)
-			AddCustomItemToLootPool(data.ref, "weapon_medium", weaponData.medWeaponChance)
-			AddCustomItemToLootPool(data.ref, "weapon_high", weaponData.highWeaponChance)
+			AddCustomItemToLootPool(data.ref, "weapon_low", lowChance)
+			AddCustomItemToLootPool(data.ref, "weapon_medium", medChance)
+			AddCustomItemToLootPool(data.ref, "weapon_high", highChance)
 		}
 		else 
 		{
-			AddCustomItemToLootPool(data.ref, "crate_weapons_earlygame", weaponData.lowWeaponChance)
-			AddCustomItemToLootPool(data.ref, "crate_weapons_midgame", weaponData.medWeaponChance)
-			AddCustomItemToLootPool(data.ref, "crate_weapons_lategame", weaponData.highWeaponChance)
+			AddCustomItemToLootPool(data.ref, "crate_weapons_earlygame", lowChance)
+			AddCustomItemToLootPool(data.ref, "crate_weapons_midgame", medChance)
+			AddCustomItemToLootPool(data.ref, "crate_weapons_lategame", highChance)
 		}
 	#endif
 	// Not needed to appear in the dev menu.
 	//#if CLIENT
 	//RunUIScript( "SetupDevCommand", "Spawn " + data.pickupString, "script SpawnGenericLoot( \"" + data.ref + "\", gp()[0].GetOrigin(), <-1,-1,-1>, 1 )" )
 	//#endif
+}
+
+var function GetCustomWeaponVar(string weaponName, string weaponVar)
+{
+	if (GetWeaponInfoFileKeyField_Global(weaponName, weaponVar) == null) {
+		throw ("WeaponVar " + weaponVar + " not found - make sure it is set up correctly.")
+	}
+	return GetWeaponInfoFileKeyField_Global(weaponName, weaponVar)
+}
+
+var function GetCustomWeaponVarWithDefault(string weaponName, string weaponVar, var defaultValue)
+{
+	if (GetWeaponInfoFileKeyField_Global(weaponName, weaponVar) == null) return defaultValue
+	return GetWeaponInfoFileKeyField_Global(weaponName, weaponVar)
 }
 
 void function CreateCustomHopup(CustomHopupData hopupData)
